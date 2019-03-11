@@ -1,0 +1,73 @@
+nav {
+  box-shadow:none;
+}
+
+.navbar-challenge {
+  background-color: white;
+  z-index: 2;
+  position: relative;
+  width:100vw;
+  height:100Px;
+  border-bottom: 1px solid #fcb400
+}
+
+
+.navbar-challenge a:hover {
+  font-weight:500 !important;
+  transition:none !important;
+}
+
+
+.navbar-challenge-container {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+}
+
+.navbar-challenge-container .navbar-challenge-side {
+  flex: 0 0 40%;
+  display: flex;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 32px;
+}
+
+
+.navbar-challenge-container .right a {
+  margin-right:20px;
+}
+
+
+
+.navbar-challenge-container .navbar-challenge-side a {
+  color:black;
+  font-size:16px;
+  font-weight:300;
+}
+
+.left {
+  justify-content: flex-end;
+}
+
+.left a {
+  margin-left:20px;
+}
+
+.right {
+  justify-content: flex-start;
+}
+
+.logo-challenge-container {
+  flex: 0 0 8%;
+  justify-content: center;
+}
+
+.logo-challenge {
+  position: relative;
+  width: 400px;
+  top: 16px;
+}
+
+
