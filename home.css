@@ -1,3 +1,63 @@
+.affiche-box {
+  padding: 80px 20px 60px 60px; 
+ 
+}
+
+.affiche-box.right {
+  text-align:left;
+}
+
+
+.affiche-box.left {
+  text-align: right
+}
+
+.txt-intro-box {
+  padding:80px 60px 60px 20px
+}
+
+.txt-data-box {
+  padding:80px 20px 60px 60px
+}
+
+.data-img {
+  height:100px;
+  margin-top:20px
+}
+
+.parcours-txt-img {
+  height:120px
+}
+
+.link-box {
+  display: block;
+  line-height: normal;
+  margin-top: 10px;
+}
+
+.logo-wavers {
+  height:80px
+}
+
+.wavers-box {
+  text-align: left;
+  padding: 60px 0px 0px 110px;
+}
+
+.txt-box-conditions {
+  padding:40px 110px 0px 110px;
+}
+
+.coach-name {
+  margin-top:34px
+}
+
+.schools-box {
+  padding:20px 100px;
+}
+
+/* REPRIS DE BAHI */
+
 #header-home {
   position: fixed;
   top: 0;
@@ -164,18 +224,16 @@
 }
 
 .categ-box {
-       padding: 30px 89px;
-      margin-left:0;
-      margin-right:0;
+  padding: 30px 89px;
+  margin-left:0;
+  margin-right:0;
 }
 
 .product-box {
   border: 1px solid #A31D23;
   padding:30px 20px 5px 20px;
   margin: 0 201px 40px 201px;
-
   /* TRANSITION FOR SLIDER */
-
   position:relative;
 }
 
