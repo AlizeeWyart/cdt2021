@@ -1,478 +1,121 @@
 @media only screen and (max-width: 760px) {
-  .position-rel-xs {
-    position:relative;
-  }
-
-  /* HEIGHT */
-  .h-48px-xs {
-    height:48px;
-  }
-  .h-20px-xs {
-    height:20px;
-  }
-  .h-60px-xs {
-    height:60px;
-  }
-
-
-
-  .h-80px-xs {
-    height:80px;
-  }
-  .h-100px-xs {
-    height:100px;
-  }
-
-  .h-500px-xs {
-    height:500px;
-  }
-
-  .h-80percent-xs {
-    height:80%;
-  }
-
-  .h-90percent-xs {
-    height:90%;
-  }
-
-
-  .h-125px-xs {
-    height:125px;
-  }
-
-  .h-160px-xs {
-    height:160px;
-  }
-
-  .h-200px-xs {
-    height:200px;
-  }
-
-  .h-auto-xs {
-    height:auto;
-  }
-
-  /* WIDTH */
-  #histoire-container .m-w-240px.xs {
-    min-width:40%;
-  }s
-  .m-w-240px.xs {
-    min-width:100%;
-  }
-  .w-600px-xs {
-    width:600px;
-  }
-  .w-100percent-xs {
+  #content-right {
+    margin-left:0;
     width:100%;
-  }
-  .w-95percent-xs {
-    width:95%;
-  }
-  .w-48percent-xs {
-    width:48%;
+    display: block;
+    position: relative;
+    z-index: 0;
+    min-height:none;
   }
 
-  /* MARGIN */
-  .m-auto-xs {
-    margin:auto;
-  }
-  .mt-10px-xs {
-    margin-top:10px;
-  }
-  .mb-20px-xs {
-    margin-bottom:20px;
-  }
-  .mb-25px-xs {
-    margin-bottom:25px;
-  }
-  .mb-40px-xs {
-    margin-bottom:40px;
-  }
-  .mt-80px-xs {
-    margin-top:80px;
-  }
-  .no-mb-xs {
-    margin-bottom:0;
-  }
-  .no-m-xs {
-    margin:0;
-  }
-  .no-mt-xs {
-    margin-top:0;
+  .affiche-box {
+    padding:60px 40px 20px 40px;
   }
 
-  /* PADDING */
-
-  .p-20px-xs {
-    padding:20px;
+  .affiche-box img {
+    width:100%
   }
 
-  .p-30px-xs {
-    padding:30px;
-  }
-
-  .p-20px-10px-xs {
-    padding:20px 10px;
-  }
-
-  .pr-80px-xs {
-    padding-right:80px;
-  }
-
-
-  .pb-20px-xs{
-    padding-bottom:20px;
-  }
-
-  .no-p-xs {
-    padding:0;
-  }
-
-  .no-pb-xs {
-    padding-bottom:0;
-  }
-
-  .no-pt-xs {
-    padding-top:0;
-  }
-
-  .no-pl-xs {
-    padding-left:0 !important;
-  }
-  .no-pr-xs {
-    padding-right:0 !important;
-  }
-
-
-  /* FONT SIZE */
-  .fs-10px-xs {
-    font-size:10px;
-  }
-
-  .fs-12px-xs {
-    font-size:12px;
-  }
-
-
-  .fs-14px-xs {
-        font-size: 1.3em;
-  }
-
-  .fs-16px-xs {
-    font-size: 16px;
-  }
-
-  .fs-18px-xs {
-    font-size:18px;
-  }
-
-  .fs-30px-xs {
-    font-size:30px;
-  }
-
-  /* TEXT */
-  .text-center-xs {
+  .txt-intro-box {
     text-align:center;
+    padding: 0px 20px;
+  }
+
+  .txt-intro-box h1 {
+    font-size:26px;
+  }
+
+  .txt-data-box {
+    padding:60px 0px 0px
+  }
+
+  .wavers-box {
+    padding:60px 0 0 0 
+  }
+
+  .txt-center-xs {
+    text-align:center
+  }
+
+  .txt-justify-xs {
+    text-align:justify
+  }
+
+  .affiche-box.cars {
+    padding:60px 0 0 0
+  }
+
+  .txt-intro-box.prize {
+    padding:0
+  }
+
+  .planning-box .data-img {
+    height:auto;
+    width:100%
+  }
+  .schools-box {
+    padding:0
+  }
+
+  .parcours-txt-img {
+    height: auto;
+    width: 100%;
+  }
+
+  .txt-box-conditions {
+    padding: 20px 10px;
+    text-align: justify;
+  }
+
+  .mt-40px-xs {
+    margin-top: 40px
   }
 
   .lh-20px-xs {
-    line-height:20px;
+    line-height:20px
   }
 
-  /*POSITION */
-  .right-10px-xs {
-    right:10px;
+  .coach-name {
+    margin-top: 0
   }
 
-  /*FLEX*/
-
-  .block-xs {
-    display:block;
+  .w-60percent-xs {
+    width:60%
   }
 
-  .flex-60percent-xs {
-    flex: 0 0 64% !important;
+  .w-100percent-xs {
+    width:100%
   }
 
-  .flex-column-center-xs {
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
+  .questions-box {
+    margin-top:0
   }
 
-  .flex-row-wrap-space-between-xs {
-    display:flex;
-    flex-direction:row;
-    justify-content: space-between;
-    flex-wrap:wrap;
+  .yellow-wavers {
+    padding:0
   }
 
-  /* HISTOIRE */
-  .row-histoire {
-    padding:20px;
-  }
-  .timeline-card, .timeline-card.left, .timeline-card.right {
-    padding:40px;
-    text-align:center;
-    min-height:200px;
-  }
-  .timeline-card.right {
-    border:none;
-  }
-  .right {
-    float:none !important;
-  }
-  .left {
-    float:none !important;
-  }
-  .timeline-card .icon-middle {
-    top: -15px;
-    left: 46%;
+  .data-img-xs {
+    margin-left:-20px
   }
 
-  /* ARTISANAT */
-
-  .mapa-artisanat {
-    margin-left:-184px;
-  }
-  .artisanat-move-arrow {
-    top: 16px;
-    right: 195px;
-  }
-  #arrow-artisanat {
-    transform: rotate(90deg);
-  }
-  .mapa-artisanat .map {
-    top: -20px;
-    left: -88px;
-    width: 614px;
-  }
-  .artisanat-info-box  {
-    right: 4%;
-    top: 20%;
-    width: 90vw;
-    position:fixed;
-  }
-  .artisanat-info-box.left {
-    left: 4%;
-    top: 20%;
-    width: 90vw;
-    position:fixed;
-  }
-  .circle-lago-atitlan {
-    bottom: 56px;
-    left: 435px;
-    right:0;
-  }
-  .video-txt-artisanat {
-    padding: 0;
-  }
-  .txt-artisanat.left {
-    text-align:center;
-    padding:0px 20px 20px 20px;
-  }
-  .txt-artisanat.right {
-    text-align:center;
-    padding:20px 20px 0px 20px;
-  }
-  .photo-full-width-artisanat {
-    height:40vh;
+  .img-video-box {
+    padding:40px 0 0 0;
   }
 
-  #journal-show .articles-section {
-    margin-top:0;
+  #inscription {
+    margin-top:40px
   }
-
-    .article-miniature:hover .lire-suite{
-      margin: 0 80px;
-    }
-
-  /* JOURNAL */
-
-  .journal-subtitle {
-    min-width:100px;
+  .faq-questions-box {
+    margin:40px 10px
   }
-
-  /* ARTICLE */
-
-  .lire-suite {
-    margin: 0 80px;
-  }
-
-  .container-80-xs {
-    width:80%;
-    margin:auto;
-  }
-  .container-100-xs {
-    width:100%;
-  }
-
-  .container-90-xs {
-    width:90%;
-  }
-
-  .photo-description
-
-
-  /* PRODUCT */
-  .product-suggestion-result .product-miniature-card {
-    width: 80%;
-  }
-  .product-suggestion-result .photos-product {
-    height:300px;
-  }
-  .product-title h1 {
-    font-size:30px;
-    margin-top:10px;
-    margin-bottom:20px;
-  }
-  .product-title {
-    padding:50px 20px 0px 20px ;
-  }
-  .price-box {
-    margin:0 40px;
-  }
-  .price-position {
-    left:36%;
-  }
-  .product-content {
-    padding:0;
-  }
-  .fs-2em-xs {
-    font-size:2em;
-  }
-  .mt-30px-xs {
-    margin-top:30px;
-  }
-  .suggestion-title img {
-    width:100%;
-  }
-
-  .btn-product-map {
-    line-height: 20px;
-  }
-
-  .broderie-show {
-    height:140px;
-  }
-  .broderie-image-xs {
-    width:90%;
-    height:100%;
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-position: center center;
-    position:absolute;
-    transition:0.3s ease-in-out;
-  }
-
-  #broderie-left-xs {
-    height: 100%;
-    width: 30%;
-    z-index: 1;
-    padding-top: 35px;
-    position:absolute;
-    left:30px;
-  }
-  #broderie-left-xs i {
-    font-size: 70px;
-    color: white;
-    text-shadow: 1px 1px 4px black
-  }
-
-  #broderie-right-xs {
-    height: 100%;
-    width: 30%;
-    z-index: 1;
-    padding-top: 35px;
-    position:absolute;
-    right:30px;
-    top:0;
-    text-align:right;
-  }
-  #broderie-right-xs i {
-    font-size: 70px;
-    color: white;
-    text-shadow: 1px 1px 4px black;
-  }
-  /* EQUIPE */
-  #thibaut-equipe {
-    width: 98px;
-    right: -15px;
-    bottom: 11px;
-  }
-  .team-member-pair {
-    margin:0;
-  }
-  .team-member-3 {
-    margin-top:0;
-  }
-
 }
 
 
 /* IPAD */
 
 @media only screen and (min-width: 767px) and (max-width: 1000px) {
-  .category-products-result {
-    padding: 60px;
-  }
-  .w-100percent-ipad {
-    width:100%;
-  }
-  .team-member-pair {
-    margin-top:40px;
-    margin-left:0;
-  }
-  .team-member-pair p {
-    padding-left:0;
-  }
-  .container-80-ipad {
-    width:80%;
-    margin:auto;
-  }
-}
 
-/*REORDER COLUMN */
-
-@media (max-width: 767px) {
-
-  .row.reorder-xs {
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg);
-
-    direction: rtl;
-  }
-
-  .row.reorder-xs > [class*="col-"] {
-    -webkit-transform: rotate(-180deg);
-    -moz-transform: rotate(-180deg);
-    -ms-transform: rotate(-180deg);
-    -o-transform: rotate(-180deg);
-    transform: rotate(-180deg);
-
-    direction: ltr;
-  }
 
 }
 
-/* ONLY ORDI */
-
-@media (min-width: 767px) {
-  .whishlist-box {
-    margin-left: -10px;
-    margin-right: -10px;
-  }
-  .mlr-10px-no-xs {
-    margin-left:10px;
-    margin-right:10px;
-  }
-  .team-member-pair p {
-    padding-right:17%;
-  }
-  .titre-equipe {
-    padding-left:11%;
-  }
-}

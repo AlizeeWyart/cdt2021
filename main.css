@@ -786,6 +786,34 @@ footer {
   outline:none;
 }
 
+.btn-green {
+  border-radius: 10px;
+  border: 1px solid #67C283 ;
+  box-shadow: none;
+  background-color: #67C283;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  color:white;
+  text-align: center;
+  letter-spacing: 1.5px;
+  height: 44px;
+  line-height: 44px;
+  padding: 0 2rem;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.btn-green:hover, .btn-green:focus, .btn-green:active, .btn-green.active {
+  background-color: transparent;
+  color: #67C283 !important;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  outline:none;
+}
+
 .btn-yellow {
   border-radius: 10px;
   border: 1px solid #FFC20A ;
@@ -1142,6 +1170,10 @@ footer {
 /* WIDTH */
 .w-50percent {
   width:50%;
+}
+
+.w-60percent {
+  width:60%;
 }
 
 .w-80percent {

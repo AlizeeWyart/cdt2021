@@ -18,6 +18,7 @@ nav {
 }
 
 
+
 .navbar-challenge-container {
   display: flex;
   height: 70px;
@@ -70,4 +71,24 @@ nav {
   top: 16px;
 }
 
+#mob-icon-open-menu, #mob-icon-open-menu {
+  top: 24px;
+  left: 16px;
+  font-size: 20px;
+}
 
+
+.mob-menu-left {
+  height: 100vh;
+  position: absolute;
+  z-index: 4;
+  background: white;
+  width: 60vw;
+  box-shadow:  1px 7px 0px #a9a9a9;;
+  padding:0 10px;
+  transition: 0.4s ease-in-out;
+}
+
+.mob-menu-left.closed {
+  margin-left:-300px
+}

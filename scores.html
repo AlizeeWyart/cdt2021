@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8">
-  <title>Wavestone - Challenge Cyber</title>
+  <title>Wave game - Le Challenge Cybersécurité By Wavestone</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="icon" type="image/png" href="logo-rond-wavestone.png" />
 
   <!-- Styles -->
   <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
-  <script src="https://use.fontawesome.com/c0ab0fc63b.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Roboto:100,300,400,500,700,900" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -52,42 +53,59 @@
  
   <!-- NAVBAR 1 -->
   <nav class="navbar-challenge position-rel hidden-xs hidden-sm">
-    <!-- Partie de gauche -->
-    <div class="container navbar-challenge-container">
-      <div class="navbar-challenge-side left pr-20px hidden-sm hidden-xs">
-        <!-- LIEN VERS SCORES -->
-        <a href="categorie-femmes.html" id="navbar-2-femmes" class="position-rel">
-          SCORES
-        </a>
+      <img src="pixels1.png" alt="" class="position-abs" id="pixels1">
+      <img src="pixels8.png" alt="" class="position-abs" id="pixels2">
+  
+      <!-- Partie de gauche -->
+      <div class="container navbar-challenge-container">
+        <div class="navbar-challenge-side left pr-20px hidden-sm hidden-xs">
+          <!-- LIEN VERS SCORES -->
+          <a href="scores.html" id="navbar-2-femmes" class="position-rel">
+            TABLEAU DES SCORES
+          </a>
+        </div>
+        <!-- Logo -->
+        <div class="logo-challenge-container">
+          <a href="index.html">
+            <img class="logo-challenge" src="logo-challenge.png" alt="">
+          </a>
+        </div>
+        <!-- Partie de droite -->
+        <div class="navbar-challenge-side right pl-20px hidden-sm hidden-xs">
+          <!-- LIEN VERS F.A.Q. -->
+          <a href="faq.html" class="position-rel">
+            F.A.Q. et Règlement
+          </a>        
+        </div>
       </div>
-      <!-- Logo -->
-      <div class="logo-challenge-container">
-        <a href="index.html">
-          <img class="logo-challenge" src="logo-challenge.png" alt="">
-        </a>
-      </div>
-      <!-- Partie de droite -->
-      <div class="navbar-challenge-side right pl-20px hidden-sm hidden-xs">
-        <!-- LIEN VERS F.A.Q. -->
-        <a href="faq.html" class="position-rel">
-          F.A.Q
-        </a>        
+    </nav>
+    <!-- // FIN NAVBAR 1 -->
+  
+  
+    <!-- NAVBAR 2 - MOBILE -->
+    <nav class="hidden-md hidden-lg hidden-xl text-center position-rel" id="mobile-navbar">
+      <i class="fas fa-bars position-abs" id="mob-icon-open-menu"></i>
+      <img class="logo-challenge-xs w-60percent mt-20px" src="logo-challenge.png" alt="">
+    </nav>
+  
+    <div class="mob-menu-left hidden-md hidden-lg hidden-xl closed" id="mob-menu-left">
+      <h4 class="pt-20px"><a href="scores.html">Tableau des Scores</a></h4>
+      <hr>
+      <h4 class="mt-20px"><a href="faq.html">F.A.Q. et règlement</a></h4>
+      <hr>
+    </div>
+
+  <section id="content-right" class="">
+    <div class="tableau-box text-center">
+      <img src="titre-scores.png" class="data-img hidden-xs" style="margin-top:60px" alt="">
+      <img src="titre-scores-xs.png" class="data-img hidden-lg hidden-md hidden-sm hidden-xl" style="margin-top:60px" alt="">
+      </br>
+      <p class="fs-18px mt-20px">Le Challenge n'a pas encore débuté, revenez plus tard pour trouver le tableau des scores.</p>
+      <div class="btn-box pt-40px fs-16px mt-80px">
+        <a class="btn-gold fw-600" href="index.html"> <i class="fas fa-home" style="margin-right:16px"></i> Revenez au Challenge</a>
       </div>
     </div>
-  </nav>
-  <!-- // FIN NAVBAR 1 -->
-
-
-
-
-
-  
-
-  <!-- ERROR -->
-  <section class="hidden-xs section-content ">  
-    <h2 class="violet no-mt fs-34px text-center">SCORES</h2>
   </section>
-  
 
   <!-- Javascript
   ================================================== -->

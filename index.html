@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8">
-  <title>Wavestone - Challenge Cyber</title>
+  <title>Wave game - Le Challenge Cybersécurité By Wavestone</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
+  <link rel="icon" type="image/png" href="logo-rond-wavestone.png" />
   <!-- Styles -->
   <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
@@ -44,7 +44,19 @@
     drift.SNIPPET_VERSION = '0.3.1';
     drift.load('a8f6f5micxie');
   </script>
-  <!-- End of Async Drift Code -->    
+  <!-- End of Async Drift Code -->  
+  
+  <!-- Hotjar Tracking Code for https://wavegame.wavestone.events -->
+  <script>
+      (function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:1258677,hjsv:6};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
 </head>
 
 <body>
@@ -52,11 +64,14 @@
  
   <!-- NAVBAR 1 -->
   <nav class="navbar-challenge position-rel hidden-xs hidden-sm">
+    <img src="pixels1.png" alt="" class="position-abs" id="pixels1">
+    <img src="pixels8.png" alt="" class="position-abs" id="pixels2">
+
     <!-- Partie de gauche -->
     <div class="container navbar-challenge-container">
       <div class="navbar-challenge-side left pr-20px hidden-sm hidden-xs">
         <!-- LIEN VERS SCORES -->
-        <a href="#" id="navbar-2-femmes" class="position-rel">
+        <a href="scores.html" id="navbar-2-femmes" class="position-rel">
           TABLEAU DES SCORES
         </a>
       </div>
@@ -70,26 +85,41 @@
       <div class="navbar-challenge-side right pl-20px hidden-sm hidden-xs">
         <!-- LIEN VERS F.A.Q. -->
         <a href="faq.html" class="position-rel">
-          F.A.Q et Règlement
+          F.A.Q. et Règlement
         </a>        
       </div>
     </div>
   </nav>
   <!-- // FIN NAVBAR 1 -->
 
+
+  <!-- NAVBAR 2 - MOBILE -->
+  <nav class="hidden-md hidden-lg hidden-xl text-center position-rel" id="mobile-navbar">
+    <i class="fas fa-bars position-abs" id="mob-icon-open-menu"></i>
+    <img class="logo-challenge-xs w-60percent mt-20px" src="logo-challenge.png" alt="">
+  </nav>
+
+  <div class="mob-menu-left hidden-md hidden-lg hidden-xl closed" id="mob-menu-left">
+    <h4 class="pt-20px"><a href="scores.html">Tableau des Scores</a></h4>
+    <hr>
+    <h4 class="mt-20px"><a href="faq.html">F.A.Q. et règlement</a></h4>
+    <hr>
+  </div>
+
+
   <!-- #1 - Affiche -->
-  <section id="content-right" class="hidden-xs">
+  <section id="content-right">
     <div class="row">
-      <div class="col-xs-6">
+      <div class="col-xs-12 col-sm-6">
         <div class="affiche-box left">
           <img src="wavegame-homepage.png" alt="" class="br-10px">
         </div>
       </div>
-      <div class="col-xs-6">
+      <div class="col-xs-12 col-sm-6">
         <div class="txt-intro-box">
-          <h1 class="no-mb fw-600">Participez au <span class="violet">WaveGame</span>,</h1>
+          <h1 class="no-mb fw-600">Participez au <span class="violet">Wave game</span>,</h1>
           <h1 class="no-mt fw-600">le Challenge Cybersécurité by Wavestone</h1>
-          <div class="btn-box pt-40px fs-16px">
+          <div class="btn-box pt-40px fs-16px hidden">
             <a class="btn-violet fw-600" > <i class="far fa-play-circle" style="margin-right:16px"></i> Découvrez le concept en vidéo</a>
           </div>
           <div class="btn-box pt-40px fs-16px">
@@ -110,17 +140,20 @@
 
 
   <!-- #2 - Présentation du Challenge -->
-  <section class="hidden-xs section-content">
+  <section class="section-content">
     <div class="row">
-      <div class="col-xs-6">
+      <div class="col-xs-12 col-sm-6">
         <div class="txt-data-box">
-            <img src="data-ecoles.png" class="data-img" alt="">
-            <img src="data-equipe.png" class="data-img ml-40px" alt="">
-            <img src="data-etudiant.png" class="data-img ml-80px" alt="">
+            <img src="data-ecoles.png" class="data-img hidden-xs" alt="">
+            <img src="data-ecoles-xs.png" class="data-img data-img-xs hidden-sm hidden-md hidden-lg hidden-xl" alt="">
+            <img src="data-equipe.png" class="data-img hidden-xs ml-40px no-ml-xs" alt="">
+            <img src="data-equipe-xs.png" class="data-img data-img-xs hidden-sm hidden-md hidden-lg hidden-xl" alt="">
+            <img src="data-etudiant.png" class="data-img hidden-xs ml-80px no-ml-xs" alt="">
+            <img src="data-etudiant-xs.png" class="data-img data-img-xs hidden-sm hidden-md hidden-lg hidden-xl" alt="">
         </div>
       </div>
-      <div class="col-xs-6">
-        <div class="affiche-box right">
+      <div class="col-xs-12 col-sm-6">
+        <div class="affiche-box right img-video-box">
           <img src="wavegame-video-click.png" alt="" class="br-10px w-90percent">
         </div>
       </div>
@@ -128,52 +161,53 @@
   </section>
 
   <!-- #4 DEUX PARCOURS -->
-  <section class="hidden-xs section-content">
+  <section class="section-content">
+    <img src="pixels3.png" alt="" class="position-abs hidden-xs" id="pixels3">
     <div class="parcours-box text-center mb-80px">
-      <img src="wavegame-parcours.png" alt="" class="parcours-txt-img">
+      <img src="wavegame-parcours.png" alt="" class="parcours-txt-img hidden-xs">
+      <img src="wavegame-parcours-xs.png" alt="" class="parcours-txt-img mt-40px-xs hidden-sm hidden-md hidden-lg hidden-xl">
       <div class="row">
-        <div class="col-xs-6">
+        <div class="col-xs-12 col-sm-6">
           <div class="wavers-box">
             <img src="bluewavers.png" alt="" class="logo-wavers">
             <h3 class="fs-26px blue mt-40px">LEUR PROFIL</h3>
-            <p class="fs-18px">Le Blue Waver est passioné par l'informatique, a des compétences techniques avancées et une envie d'approfondir ses connaissances en cybersécurité</p>
+            <p class="fs-18px">Le Blue Waver est passioné par l'informatique, a des compétences techniques avancées et une envie d'approfondir ses connaissances en cybersécurité.</p>
             <h3 class="fs-26px blue mt-40px">LEUR MISSION</h3>
-            <p class="fs-18px">Empêcher un système d'être compromis</p>
-            <div class="btn-box pt-40px fs-16px">
-              <a class="btn-blue fw-600" href="#inscription"> <i class="fas fa-graduation-cap" style="margin-right:16px"></i> Je découvre les écoles</a>
-            </div>
+            <p class="fs-18px">Empêcher un système d'être compromis.</p>
           </div>
         </div>
-        <div class="col-xs-6">
+        <div class="col-xs-12 col-sm-6">
           <div class="wavers-box">
             <img src="yellowwavers.png" alt="" class="logo-wavers">
             <h3 class="fs-26px yellow mt-40px">LEUR PROFIL</h3>
             <p class="fs-18px">Le Yellow Waver est intéressé par les sujets de transformation numérique mais n'a pas forcément de connaissances poussées en IT ou en cybersécurité.</p>
             <h3 class="fs-26px yellow mt-40px">LEUR MISSION</h3>
             <p class="fs-18px">Définir une stratégie de cybersécurité.</p>
-            <div class="btn-box pt-40px fs-16px">
-              <a class="btn-yellow fw-600" href="#inscription"> <i class="fas fa-graduation-cap" style="margin-right:16px"></i> Je découvre les écoles</a>
-            </div>
           </div>
         </div>
+      </div>
+      <div class="btn-box pt-40px fs-16px">
+        <a class="btn-violet fw-600 hidden-xs" href="#schools"> <i class="fas fa-graduation-cap" style="margin-right:16px"></i> Je découvre les écoles participantes</a>
+        <a class="btn-violet fw-600 hidden-sm hidden-md hidden-lg hidden-lg" href="#schools"> <i class="fas fa-graduation-cap" style="margin-right:16px"></i> Les écoles</a>
       </div>
     </div>
     
   </section>
 
   <!-- #3 Prix à Gagner -->
-  <section class="hidden-xs section-content">
+  <section class="section-content bg-violet">
     <div class="row">
-      <div class="col-xs-6">
+      <div class="col-xs-12 col-sm-6">
         <div class="affiche-box left">
           <img src="wavegame-travel.png" alt="" class="br-10px w-90percent">
         </div>
       </div>
-      <div class="col-xs-6">
-        <div class="txt-intro-box">
-          <img src="data-weekends.png" class="data-img" alt="">
-          <h2 class="no-mb fw-600 black fs-28px">Deux équipes <span class="gold">gagnantes</span></h2>
-          <p class="mt-20px fs-18px">Chaque membre des deux équipes gagnantes remportera un week-end pour deux en Europe.</p>
+      <div class="col-xs-12 col-sm-6">
+        <div class="txt-intro-box prize">
+          <img src="data-weekends.png" class="data-img hidden-xs" alt="">
+          <img src="data-weekends-xs.png" alt="" class="br-10px w-90percent w-100percent-xs hidden-sm hidden-md hidden-lg hidden-xl">
+          <h2 class="no-mb fw-600 white fs-28px">Deux équipes <span class="gold">gagnantes</span></h2>
+          <p class="mt-20px fs-18px white">Chaque membre des deux équipes gagnantes remportera un week-end pour deux en Europe.</p>
           <div class="btn-box pt-40px fs-16px">
             <a class="btn-gold fw-600" href="#inscription"> <i class="fas fa-feather" style="margin-right:16px"></i> Je m'inscris</a>
           </div>
@@ -183,108 +217,52 @@
   </section>
 
   <!-- #3 - Scénario -->
-  <section class="hidden-xs section-content">
+  <section class="section-content">
     <div class="row">
-      <div class="col-xs-6">
+      <div class="col-xs-12 col-sm-6">
         <div class="txt-data-box txt-right">
-          <img src="wavegame-scenario.png" class="data-img" style="margin-top:0" alt="">
-          <h2 class="no-mb no-mt fw-600 black fs-28px">Les véhicules <span class="violet">connectés</span></h2>
-          <p class="mt-20px fs-18px">D'ici 2025, <span class="violet fw-500">100% des véhicules vendus sur le marché seront connectés.</span> Les acteurs de l'industrie ont d'énormes défis à relever en très peu de temps : offrir de nouveaux services à leurs clients et faire face aux cybermenaces. Car les menaces sont bien réelles. Leurs impacts pourraient porter atteinte à la sécurité de tous. <span class="fw-500 violet">Notre 1e challenge WaveGame vous transporte au coeur de ce sujet passionnant.</span></p>
-          <div class="link-box">
+          <img src="wavegame-scenario.png" class="data-img hidden-xs" style="margin-top:0" alt="">
+          <img src="wavegame-scenario-xs.png" class="data-img hidden-sm hidden-md hidden-xl hidden-lg" style="margin-top:0; margin-bottom:20px" alt="">
+          <h2 class="no-mb no-mt fw-600 black fs-28px txt-center-xs">Les véhicules <span class="violet">connectés</span></h2>
+          <p class="mt-20px fs-18px txt-justify-xs">D'ici 2025, <span class="violet fw-500">100% des véhicules vendus sur le marché seront connectés.</span> Les acteurs de l'industrie ont d'énormes défis à relever en très peu de temps : offrir de nouveaux services à leurs clients et faire face aux cybermenaces. Car les menaces sont bien réelles. Leurs impacts pourraient porter atteinte à la sécurité de tous. <span class="fw-500 violet">Notre premier challenge Wave game vous transporte au coeur de ce sujet passionnant.</span></p>
+          <div class="link-box txt-justify-xs">
             <a class="mt-20px fs-12px hover-fw-500" href="https://www.riskinsight-wavestone.com/2018/05/saga-13-voiture-connectee/">
               <span class="fw-500 white bg-violet plr-5px upper">Lire notre article :</span><span class="plr-5px bg-violet-opaque">La voiture connectée, entre cybersécurité et safety</span>
             </a>
           </div>
-          <div class="link-box">
+          <div class="link-box txt-justify-xs">
             <a class="mt-20px fs-12px hover-fw-500" href="https://www.wavestone.com/app/uploads/2017/02/VehiculesConnectes_2017_VF.pdf">
               <span class="fw-500 white bg-violet plr-5px upper">Lire notre publication :</span><span class="plr-5px bg-violet-opaque">Véhicules connectés : une révolution à l'avantage des constructeurs historiques ?</span>
             </a>
           </div>
         </div>
       </div>
-      <div class="col-xs-6">
-        <div class="affiche-box right">
+      <div class="col-xs-12 col-sm-6">
+        <div class="affiche-box right cars">
           <img src="wavegame-cars.png" alt="" class="br-10px w-90percent">
         </div>
       </div>
     </div>
   </section>
 
-
-  <!-- <section class="hidden-xs section-content">
-      <h2 class="text-center violet no-mt fs-34px">Un scénario innovant sur les véhicules connectés</h2>
-      <div class="row mt-80px">
-        <div class="col-xs-6">
-          <div class="bg-violet p-40px">
-            <h3 class="white no-mt text-center">Le scénario du challenge</h3>
-            <p class="white no-mb">at harum aliquid feugiat quo. Usu corpora incorrupte ei. 
-              Nusquam suscipiantur has te. Nam no rationibus
-              at harum aliquid feugiat quo. Usu corpora incorrupte ei. 
-              Nusquam suscipiantur has te. Nam no rationibus</br>
-              at harum aliquid feugiat quo. Usu corpora incorrupte ei. 
-              Nusquam suscipiantur has te. Nam no rationibus
-              at harum aliquid feugiat quo. Usu corpora incorrupte ei. 
-              Nusquam suscipiantur has te. Nam no rationibus
-              at harum aliquid feugiat quo. Usu corpora incorrupte ei. 
-              Nusquam suscipiantur has te. Nam no rationibus
-              at harum aliquid feugiat quo. Usu corpora incorrupte ei. 
-              Nusquam suscipiantur has te. Nam no rationibus</br>
-              at harum aliquid feugiat quo. Usu corpora incorrupte ei. 
-              Nusquam suscipiantur has te. Nam no rationibus
-              at harum aliquid feugiat quo. Usu corpora incorrupte ei. 
-              Nusquam suscipiantur has te. Nam no rationibus
-              at harum aliquid feugiat quo. Usu corpora incorrupte ei. 
-              Nusquam suscipiantur has te. Nam no rationibus
-              at harum aliquid feugiat quo. Usu corpora incorrupte ei. 
-              Nusquam suscipiantur has te. Nam no rationibus
-            </p>
-          </div>
-        </div>
-        <div class="col-xs-6">
-            <div class="p-40px">
-              <h3 class="violet no-mt text-center">Les véhicules connectés : un enjeu important</h3>
-              <p class="no-mb">at harum aliquid feugiat quo. Usu corpora incorrupte ei. 
-                Nusquam suscipiantur has te. Nam no rationibus
-                at harum aliquid feugiat quo. Usu corpora incorrupte ei. 
-                Nusquam suscipiantur has te. Nam no rationibus
-                </br>
-                at harum aliquid feugiat quo. Usu corpora incorrupte ei. 
-                Nusquam suscipiantur has te. Nam no rationibus
-                at harum aliquid feugiat quo. Usu corpora incorrupte ei. 
-                Nusquam suscipiantur has te. Nam no rationibus
-                at harum aliquid feugiat quo. Usu corpora incorrupte ei. 
-                Nusquam suscipiantur has te. Nam no rationibus
-                at harum aliquid feugiat quo. Usu corpora incorrupte ei. 
-                Nusquam suscipiantur has te. Nam no rationibus</br>
-                at harum aliquid feugiat quo. Usu corpora incorrupte ei. 
-                Nusquam suscipiantur has te. Nam no rationibus
-                at harum aliquid feugiat quo. Usu corpora incorrupte ei. 
-                Nusquam suscipiantur has te. Nam no rationibus
-                at harum aliquid feugiat quo. Usu corpora incorrupte ei. 
-                Nusquam suscipiantur has te. Nam no rationibus
-                at harum aliquid feugiat quo. Usu corpora incorrupte ei. 
-                Nusquam suscipiantur has te. Nam no rationibus
-              </p>
-            </div>
-          </div>
-      </div>
-  </section>-->
-
   <!-- #4 - Description & Planning -->
-  <section class="hidden-xs section-content text-center">
+  <section class="section-content text-center">
     <div class="planning-box">
       <img src="wavegame-dates.png" class="data-img" style="margin-top:60px" alt="">
-      <h2 class="no-mt fw-600 black fs-28px">Quand se déroule le <span class="gold">WaveGame</span> ?</h2>
-      <img src="wavegame-planning.png" alt="" class="w-100percent mt-60px">
+      <h2 class="no-mt fw-600 black fs-28px">Quand se déroule le <span class="gold">Wave game</span> ?</h2>
+      <img src="wavegame-planning.png" alt="" class="w-100percent mt-60px hidden-xs">
+      <img src="wavegame-planning-xs.png" alt="" class="w-100percent mt-60px hidden-sm hidden-md hidden-lg hidden-xl">
     </div>
   </section>
 
   <!-- #4 DEUX PARCOURS -->
-  <section class="hidden-xs section-content">
+  <section class="section-content" id="schools">
+      <img src="pixels3.png" alt="" class="position-abs hidden-xs" id="pixels4">
       <div class="parcours-box text-center mb-80px">
-        <img src="schools-participation-txt.png" alt="" class="parcours-txt-img">
+        <img src="schools-participation-txt.png" alt="" class="parcours-txt-img hidden-xs">
+        <img src="schools-participation-txt-xs.png" alt="" style="margin-top:40px" class="parcours-txt-img hidden-sm hidden-md hidden-lg hidden-xl">
         <div class="row">
-          <div class="col-xs-6">
+          <div class="col-xs-12 col-sm-6">
             <div class="wavers-box">
               <img src="bluewavers.png" alt="" class="logo-wavers">
             </div>
@@ -292,7 +270,7 @@
               <img src="blue-schools.png" alt="" class="w-100percent mt-40px">
             </div>
           </div>
-          <div class="col-xs-6">
+          <div class="col-xs-12 col-sm-6">
             <div class="wavers-box">
               <img src="yellowwavers.png" alt="" class="logo-wavers">
             </div>
@@ -301,29 +279,33 @@
             </div>
           </div>
         </div>
+        <a href="#contact-us" class="click-to-contact">Votre école n'est pas dans la liste ? Contactez-nous pour la faire participer à la prochaine édition !</a>
       </div>
     </section>
 
   <!-- #4 - Critères de sélection -->
-  <section class="hidden-xs section-content text-center">
+  <section class="section-content text-center bg-violet section-conditions">
     <div class="row">
-      <div class="col-xs-6">
+      <div class="col-xs-12 col-sm-6">
         <img src="rejoindre-wavers.png" alt="" class="parcours-txt-img">
         <div class="txt-box-conditions txt-left">
-          <h2 class="no-mt fw-600 black fs-18px"><span class="green">3 conditions</span> pour participer au WaveGame</h2>
-          <p class="fs-16px"><span class="green">■ </span> Étudier dans l'une des écoles participantes.</p>
-          <p class="fs-16px"><span class="green">■ </span> Se prévoir plusieurs heures pour chaque épreuve à distance sur la période du 23 avril au 31 mai 2019.</p>
-          <p class="fs-16px"><span class="green">■ </span> Être disponible le 6 juin 2019 pour la grande finale (journée et soirée).</p>    
+          <h2 class="no-mt fw-600 black fs-18px white lh-20px-xs"><span class="green">3 conditions</span> pour participer au Wave game</h2>
+          <p class="fs-16px white"><span class="green">■ </span> Étudier dans l'une des écoles participantes.</p>
+          <p class="fs-16px white"><span class="green">■ </span> Se prévoir plusieurs heures pour chacune des 3 épreuves à distance sur la période du 23 avril au 31 mai 2019.</p>
+          <p class="fs-16px white"><span class="green">■ </span> Être disponible le 6 juin 2019 pour la grande finale (journée et soirée).</p>    
+          <div class="btn-box pt-40px fs-16px txt-center-xs">
+            <a class="btn-green fw-600" href="#inscription"> <i class="fas fa-feather" style="margin-right:16px"></i> Je m'inscris</a>
+          </div>
         </div>
       </div>
-      <div class="col-xs-6">
-        <img src="ame-wavers.png" alt="" class="parcours-txt-img">
+      <div class="col-xs-12 col-sm-6">
+        <img src="ame-wavers.png" alt="" class="parcours-txt-img mt-40px-xs">
         <div class="txt-box-conditions txt-left">
-          <h2 class="no-mt fw-600 black fs-18px">WaveGame s'inscrit dans le <span class="blue-sky">Positive Way</span></h2>
-          <p class="fs-16px">Un Waver est enthousiaste, déterminé, engagé.</p>
-          <p class="fs-16px">Il a l'esprit d'équipe et aime prendre du plaisir à relever des challenges.</p> 
-          <div class="btn-box pt-40px fs-16px">
-            <a class="btn-blue-sky fw-600" href="#inscription"> <i class="fas fa-feather" style="margin-right:16px"></i> Je m'inscris</a>
+          <h2 class="no-mt fw-600 black fs-18px white lh-20px-xs">Wave game s'inscrit dans le <span class="blue-sky">Positive Way</span></h2>
+          <p class="fs-16px white">Un Waver est enthousiaste, déterminé, engagé.</p>
+          <p class="fs-16px white">Il a l'esprit d'équipe et aime prendre du plaisir à relever des challenges.</p> 
+          <div class="btn-box pt-40px fs-16px txt-center-xs">
+            <a class="btn-blue-sky fw-600" href="https://www.wavestone.com/app/uploads/2018/09/profil-wavestone-201819-FR.pdf"> <i class="fas fa-eye" style="margin-right:16px"></i> Découvrez le Positive Way</a>
           </div>
         </div>
         
@@ -332,144 +314,145 @@
   </section>
 
   <!-- #4 COACHS -->
-  <section class="hidden-xs section-content" id="inscription">
+  <section class="section-content" id="inscription">
       <div class="parcours-box text-center mb-80px">
         <img src="coach-inscription.png" alt="" class="parcours-txt-img">
+        <h2 class="no-mb no-mt fw-600 black fs-28px txt-center-xs">Envoyez votre <span class="violet">CV au coach</span> de votre école</span></h2>
         <div class="row">
-          <div class="col-xs-6">
+          <div class="col-sm-6 col-xs-12">
             <div class="wavers-box">
               <img src="bluewavers.png" alt="" class="logo-wavers mb-40px">
               <!-- Centrale Supélec -->
-              <div class="coach-box">
+              <div class="coach-box txt-center-xs">
                 <div class="row">
-                  <div class="col-xs-4">
-                    <img class="w-100percent" src="coach-centrale.png" alt=""> 
+                  <div class="col-xs-12 col-sm-4">
+                    <img class="w-100percent w-60percent-xs" src="coach-centrale.png" alt=""> 
                   </div>
-                  <div class="col-xs-8">
-                    <h4 class="fs-26px blue upper fw-600 coach-name">Sleh-Edine</h4>
-                    <p class="fs-12px fw-500">Coach de l'équipe de CentraleSupélec</p>
+                  <div class="col-xs-12 col-sm-8">
+                    <h4 class="fs-26px blue upper fw-600 coach-name">Sleh-Eddine</h4>
+                    <p class="fs-12px fw-500">Coach de l'équipe de <span class="fw-600">CentraleSupélec</span></p>
                     <a href="mailto:sleh-eddine.choura@wavestone.com" class="fs-12px"><i class="fas fa-envelope mr-10px blue"></i>sleh-eddine.choura@wavestone.com</a>
                   </div>
                 </div>
               </div>
               <!-- ENSIMAG -->
-              <div class="coach-box">
+              <div class="coach-box txt-center-xs">
                 <div class="row">
-                  <div class="col-xs-4">
-                    <img class="w-100percent" src="coach-ensimag.png" alt=""> 
+                  <div class="col-xs-12 col-sm-4">
+                    <img class="w-100percent w-60percent-xs" src="coach-ensimag.png" alt=""> 
                   </div>
-                  <div class="col-xs-8">
+                  <div class="col-xs-12 col-sm-8">
                     <h4 class="fs-26px blue upper fw-600 coach-name">Maxime</h4>
-                    <p class="fs-12px fw-500">Coach de l'équipe de l'ENSIMAG</p>
+                    <p class="fs-12px fw-500">Coach de l'équipe de l'<span class="fw-600">ENSIMAG</span></p>
                     <a href="mailto:maxime.meignand@wavestone.com" class="fs-12px"><i class="fas fa-envelope mr-10px blue"></i>maxime.meignan@wavestone.com</a>
                   </div>
                 </div>
               </div>
               <!-- EPITA -->
-              <div class="coach-box">
+              <div class="coach-box txt-center-xs">
                 <div class="row">
-                  <div class="col-xs-4">
-                    <img class="w-100percent" src="coach-epita.png" alt=""> 
+                  <div class="col-xs-12 col-sm-4">
+                    <img class="w-100percent w-60percent-xs" src="coach-epita.png" alt=""> 
                   </div>
-                  <div class="col-xs-8">
+                  <div class="col-xs-12 col-sm-8">
                     <h4 class="fs-26px blue upper fw-600 coach-name">Xavier</h4>
-                    <p class="fs-12px fw-500">Coach de l'équipe de l'EPITA</p>
+                    <p class="fs-12px fw-500">Coach de l'équipe de l'<span class="fw-600">EPITA</span></p>
                     <a href="mailto:xavier.gerondeau@wavestone.com" class="fs-12px"><i class="fas fa-envelope mr-10px blue"></i>xavier.gerondeau@wavestone.com</a>
                   </div>
                 </div>
               </div>
               <!-- Telecom ParisTech -->
-              <div class="coach-box">
+              <div class="coach-box txt-center-xs">
                 <div class="row">
-                  <div class="col-xs-4">
-                    <img class="w-100percent" src="coach-telecomparistech.png" alt=""> 
+                  <div class="col-xs-12 col-sm-4">
+                    <img class="w-100percent w-60percent-xs" src="coach-telecomparistech.png" alt=""> 
                   </div>
-                  <div class="col-xs-8">
+                  <div class="col-xs-12 col-sm-8">
                     <h4 class="fs-26px blue upper fw-600 coach-name">Aurore</h4>
-                    <p class="fs-12px fw-500">Coach de l'équipe de Telecom ParisTech</p>
+                    <p class="fs-12px fw-500">Coach de l'équipe de <span class="fw-600">Telecom ParisTech</span></p>
                     <a href="mailto:aurore.yvard@wavestone.com" class="fs-12px"><i class="fas fa-envelope mr-10px blue"></i>aurore.yvard@wavestone.com</a>
                   </div>
                 </div>
               </div>
               <!-- Telecom SudParis -->
-              <div class="coach-box">
+              <div class="coach-box txt-center-xs">
                 <div class="row">
-                  <div class="col-xs-4">
-                    <img class="w-100percent" src="coach-tsp.png" alt=""> 
+                  <div class="col-xs-12 col-sm-4">
+                    <img class="w-100percent w-60percent-xs" src="coach-tsp.png" alt=""> 
                   </div>
-                  <div class="col-xs-8">
+                  <div class="col-xs-12 col-sm-8">
                     <h4 class="fs-26px blue upper fw-600 coach-name">Marine</h4>
-                    <p class="fs-12px fw-500">Coach de l'équipe de Telecom SudParis</p>
+                    <p class="fs-12px fw-500">Coach de l'équipe de <span class="fw-600">Telecom SudParis</span></p>
                     <a href="mailto:marine.puibaraud@wavestone.com" class="fs-12px"><i class="fas fa-envelope mr-10px blue"></i>marine.puibaraud@wavestone.com</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-xs-6">
-            <div class="wavers-box" style="padding:60px 80px 0 30px">
+          <div class="col-sm-6 col-xs-12">
+            <div class="wavers-box yellow-wavers mt-40px-xs">
               <img src="yellowwavers.png" alt="" class="logo-wavers mb-40px">
               <!-- ENSAM -->
-              <div class="coach-box">
+              <div class="coach-box txt-center-xs">
                 <div class="row">
-                  <div class="col-xs-4">
-                    <img class="w-100percent" src="coach-ensam.png" alt=""> 
+                  <div class="col-xs-12 col-sm-4">
+                    <img class="w-100percent w-60percent-xs" src="coach-ensam.png" alt=""> 
                   </div>
-                  <div class="col-xs-8">
+                  <div class="col-xs-12 col-sm-8">
                     <h4 class="fs-26px yellow upper fw-600 coach-name">Laure</h4>
-                    <p class="fs-12px fw-500">Coach de l'équipe des Arts & Métiers</p>
+                    <p class="fs-12px fw-500">Coach de l'équipe des <span class="fw-600">Arts & Métiers</span></p>
                     <a href="mailto:laure.ducousso@wavestone.com" class="fs-12px"><i class="fas fa-envelope mr-10px yellow"></i>laure.ducousso@wavestone.com</a>
                   </div>
                 </div>
               </div>
               <!-- EDHEC -->
-              <div class="coach-box">
+              <div class="coach-box txt-center-xs">
                 <div class="row">
-                  <div class="col-xs-4">
-                    <img class="w-100percent" src="coach-edhec.png" alt=""> 
+                  <div class="col-xs-12 col-sm-4">
+                    <img class="w-100percent w-60percent-xs" src="coach-edhec.png" alt=""> 
                   </div>
-                  <div class="col-xs-8">
+                  <div class="col-xs-12 col-sm-8">
                     <h4 class="fs-26px yellow upper fw-600 coach-name">Alexandre</h4>
-                    <p class="fs-12px fw-500">Coach de l'équipe de l'EDHEC</p>
+                    <p class="fs-12px fw-500">Coach de l'équipe de l'<span class="fw-600">EDHEC</span></p>
                     <a href="mailto:alexandre.bianchi@wavestone.com" class="fs-12px"><i class="fas fa-envelope mr-10px yellow"></i>alexandre.bianchi@wavestone.com</a>
                   </div>
                 </div>
               </div>
               <!-- EMLYON -->
-              <div class="coach-box">
+              <div class="coach-box txt-center-xs">
                 <div class="row">
-                  <div class="col-xs-4">
-                    <img class="w-100percent" src="coach-emlyon.png" alt=""> 
+                  <div class="col-xs-12 col-sm-4">
+                    <img class="w-100percent w-60percent-xs" src="coach-emlyon.png" alt=""> 
                   </div>
-                  <div class="col-xs-8">
+                  <div class="col-xs-12 col-sm-8">
                     <h4 class="fs-26px yellow upper fw-600 coach-name">Pauline</h4>
-                    <p class="fs-12px fw-500">Coach de l'équipe de l'emlyon business school</p>
-                    <a href="mailto:pauline.kamoum@wavestone.com" class="fs-12px"><i class="fas fa-envelope mr-10px yellow"></i>pauline.kamoum@wavestone.com</a>
+                    <p class="fs-12px fw-500">Coach de l'équipe de l'<span class="fw-600">emlyon business school</span></p>
+                    <a href="mailto:pauline.kamoun@wavestone.com" class="fs-12px"><i class="fas fa-envelope mr-10px yellow"></i>pauline.kamoun@wavestone.com</a>
                   </div>
                 </div>
               </div>
               <!-- IMTBS -->
-              <div class="coach-box">
+              <div class="coach-box txt-center-xs">
                 <div class="row">
-                  <div class="col-xs-4">
-                    <img class="w-100percent" src="coach-tbs.png" alt=""> 
+                  <div class="col-xs-12 col-sm-4">
+                    <img class="w-100percent w-60percent-xs" src="coach-tbs.png" alt=""> 
                   </div>
-                  <div class="col-xs-8">
+                  <div class="col-xs-12 col-sm-8">
                     <h4 class="fs-26px yellow upper fw-600 coach-name">Ambre</h4>
-                    <p class="fs-12px fw-500">Coach de l'équipe de Institut Mines-Telecom Business School</p>
+                    <p class="fs-12px fw-500">Coach de l'équipe de <span class="fw-600">Institut Mines-Telecom Business School</span></p>
                     <a href="mailto:ambre.montfort@wavestone.com" class="fs-12px"><i class="fas fa-envelope mr-10px yellow"></i>ambre.montfort@wavestone.com</a>
                   </div>
                 </div>
               </div>
               <!-- Sorbonne -->
-              <div class="coach-box">
+              <div class="coach-box txt-center-xs">
                 <div class="row">
-                  <div class="col-xs-4">
-                    <img class="w-100percent" src="coach-sorbonne.png" alt=""> 
+                  <div class="col-xs-12 col-sm-4">
+                    <img class="w-100percent w-60percent-xs" src="coach-sorbonne.png" alt=""> 
                   </div>
-                  <div class="col-xs-8">
+                  <div class="col-xs-12 col-sm-8">
                     <h4 class="fs-26px yellow upper fw-600 coach-name">Swann</h4>
-                    <p class="fs-12px fw-500">Coach de l'équipe de la Sorbonne</p>
+                    <p class="fs-12px fw-500">Coach de l'équipe de la <span class="fw-600">Sorbonne</span></p>
                     <a href="mailto:swann.lassiva@wavestone.com" class="fs-12px"><i class="fas fa-envelope mr-10px yellow"></i>swann.lassiva@wavestone.com</a>
                   </div>
                 </div>
@@ -481,31 +464,46 @@
       
     </section>
 
+  <!-- #4 - Description & Planning -->
+  <section class="section-content text-center no-height" id="contact-us">
+    <div class="planning-box questions-box">
+      <img src="wavegame-questions.png" class="data-img" alt="">
+      <h2 class="no-mt fw-600 black fs-28px">Contactez l'équipe organisatrice</h2>
+      <p class="fs-18px">En leur envoyant un mail à <span class="violet fw-500">wavegame@wavestone.com</span></p>
+      <img src="wavegame-team.png" alt="" class="w-80percent mt-40px hidden-xs">
+      <img src="wavegame-team-xs.png" alt="" class="w-80percent w-100percent-xs mt-40px hidden-sm hidden-md hidden-lg hidden-xl">
+    </div>
+  </section>
 
+  <br><br>
 
-  <!-- #7 - Wavestone et sa practice Cybersécurité -->
+  <section class="section-content text-center bg-violet">
+    <h4 class="white pt-40px hidden">Wavestone, the Positive Way</h4>
+  </section>
+  <!-- #7 - Wavestone et sa practice Cybersécurité 
   <section class="hidden-xs section-content ">  
     <h2 class="violet no-mt fs-34px text-center">Wavestone et la practice Cybersécurité</h2>
     <p>Description de Wavestone</p>
     <p>Description de CDT</p>
     <p>+ Liens vers articles, site internet et offres de recrutement</p>
-  </section>
+  </section>-->
 
-  <!-- #8 Restés connectés -->
+  <!-- #8 Restés connectés
   <section class="hidden-xs section-content ">  
       <h2 class="violet no-mt fs-34px text-center">Restez connectés</h2>
       <p>Feed Twitter</p>
       <p>Feed LinkedIn</p>
       <p>Feed Facebook</p>
-    </section>
+    </section> -->
   
 
   <!-- Javascript
   ================================================== -->
   <script>window.jQuery || document.write('<script src="jquery-1.11.0.min.js"><\/script>')</script>
+  <script src="main.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-  <script src="main.js"></script>
+  
 
   </body>
 </html>
